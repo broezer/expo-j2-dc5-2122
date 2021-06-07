@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-plusplus */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { NextPage, GetStaticProps } from 'next';
 import Head from 'next/head';
@@ -12,8 +14,7 @@ import { getSortedDIPostsData } from '../../lib/di-posts';
 import { getSortedPostsData } from '../../lib/posts';
 
 interface Post {
-  date: string;
-  title: string;
+  firstname: string;
   id: string;
 }
 
@@ -44,29 +45,25 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-
-
 const Home: NextPage<IProps> = ({ allDIPostsData }) => {
   return (
     <>
       <Container>
         <Head>
-          <title>EXPO CMD MINOR: IUXD &amp; DI</title>
+          <title>EXPO CMD Jaar 1 2020-21</title>
           <link href="/favicon.ico" rel="icon" />
         </Head>
 
         <Main>
-          <h2 className="text-purple-600 uppercase text-sm font-black">
-            Designful Innovation
+          <h2 className="text-green-600 uppercase text-sm font-black">
+            Students
           </h2>
           <ul className="container no-underline flex flex-wrap  justify-start text-white">
-            {allDIPostsData.map(({ id, title }) => (
+            {allDIPostsData.map(({ id, firstname }) => (
               <li
                 key={id}
-                className="py-2 px-3 text-xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
-                <Link href={`/student/${id}`}>
-                  <a>{title}</a>
-                </Link>
+                className="py-2 px-3 text-xl font-medium  hover:text-green-600 transition duration-300 ease-in-out">
+                {firstname}
                 <br />
               </li>
             ))}
