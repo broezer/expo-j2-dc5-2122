@@ -44,8 +44,7 @@ export default function App({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <Video src="https://player.vimeo.com/external/560157629.hd.mp4?s=bfdc554849be069783f1b9e680e6e2baa575c519&profile_id=175" />
 
-        <Component {...pageProps}  />
-
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   );

@@ -60,14 +60,14 @@ const Home: NextPage<IProps> = ({ allDIPostsData }) => {
           </h2>
           <ul className="container no-underline flex flex-wrap  justify-start text-white">
             {allDIPostsData.map(({ id, firstname }) => (
-              
-                <li
-                  key={id}
-                  className="py-2 px-3 text-xl font-medium  hover:text-green-600 transition duration-300 ease-in-out">
-                  {firstname}
-                  <br />
-                </li>
-              
+              <li
+                key={id}
+                className="py-2 px-3 text-xl font-medium  hover:text-green-600 transition duration-300 ease-in-out">
+                <Link href={`/student/${id}`}>
+                  <a>{firstname}</a>
+                </Link>
+                <br />
+              </li>
             ))}
           </ul>
         </Main>
