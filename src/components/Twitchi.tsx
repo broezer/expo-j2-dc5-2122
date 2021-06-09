@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import 'tailwindcss/dist/tailwind.css';
 
 const AsideWrapper = styled.aside`
-  min-width: 30vw;
-  max-width: 30vw;
-  min-height: 19vw;
+  min-width: 90vw;
+  max-width: 90vw;
+  min-height: 57vw;
   background: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   box-shadow: 0 0 2vw rgb(0, 0, 0);
@@ -15,9 +15,11 @@ const AsideWrapper = styled.aside`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 15vh;
-  right: 1vw;
+  position: relative;
+  margin-top: 2vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  
 `;
 
 
