@@ -25,6 +25,11 @@ interface Post {
 
 interface IProps {
   allDIPostsData: Post[];
+  postData: {
+    firstname: string;
+    lastname: string;
+    contentHtml: string;
+  };
 }
 
 function shuffleArray(array) {
@@ -93,6 +98,7 @@ const Project: NextPage<IProps> = ({ postData, allDIPostsData }) => {
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
           </article>
+
           <h2 className="text-green-600 uppercase text-sm font-black mt-10">
             Students
           </h2>
