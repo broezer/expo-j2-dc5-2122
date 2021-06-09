@@ -3,8 +3,8 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import 'tailwindcss/dist/tailwind.css';
 
 import Video from '@/components/Video';
-import Twitchi from '@/components/Twitchi';
-import Footer from '@/components/Footer';
+// import Twitchi from '@/components/Twitchi';
+// import Footer from '@/components/Footer';
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -37,17 +37,15 @@ const theme = {
   }
 };
 
-
-
 export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Video src="https://player.vimeo.com/external/560157629.hd.mp4?s=bfdc554849be069783f1b9e680e6e2baa575c519&profile_id=175" />
-        <Twitchi src="https://obs.ninja/?view=G366PiZ"></Twitchi>       
+
         <Component {...pageProps}  />
-        
+
       </ThemeProvider>
     </>
   );

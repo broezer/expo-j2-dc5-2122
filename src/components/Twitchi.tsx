@@ -19,9 +19,7 @@ const AsideWrapper = styled.aside`
   margin-top: 2vh;
   margin-left: 5vw;
   margin-right: 5vw;
-  
 `;
-
 
 const Twitchi: FC<{ src: string }> = ({ src }) => {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
@@ -41,16 +39,15 @@ const Twitchi: FC<{ src: string }> = ({ src }) => {
         <div className="twitch-video w-full h-full">
           <iframe
             ref={miroRef}
-            width="100%" 
-            height="100%"
-            scrolling="no" 
             allowFullScreen
             className="w-full h-full"
+            height="100%"
+            scrolling="no"
+            width="100%"
           />
         </div>
       </div>
     </AsideWrapper>
-    
   );
 };
 
