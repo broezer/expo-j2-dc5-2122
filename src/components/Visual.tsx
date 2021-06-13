@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
 
 const Visuals: FC<{ src: string }> = ({ src }) => {
-  const [, setIsLoaded] = useState<boolean>(false);
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   const imgRef = useRef(null);
   useEffect(() => {
