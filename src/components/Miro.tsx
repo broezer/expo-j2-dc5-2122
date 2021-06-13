@@ -5,7 +5,7 @@ const Miro: FC<{ src: string }> = ({ src }) => {
 
   const miroRef = useRef(null);
   useEffect(() => {
-    miroRef.current.src = 'https://miro.com/app/live-embed/' + src + '=/?moveToViewport=-813,-457,1625,913';
+    miroRef.current.src = 'https://miro.com/app/live-embed/' + src + '=/';
 
     miroRef.current.addEventListener('loadeddata', () => {
       setIsLoaded(true);
