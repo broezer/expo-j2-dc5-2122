@@ -10,17 +10,15 @@ import 'tailwindcss/dist/tailwind.css';
 import Container from '@/components/Container';
 import Main from '@/components/Main';
 
-import { getSortedDIPostsData } from '../../lib/di-posts';
 import { getSortedPostsData } from '../../lib/posts';
 
 interface Post {
-  firstname: string;
+  title: string;
   id: string;
 }
 
 interface IProps {
   allPostsData: Post[];
-  allDIPostsData: Post[];
 }
 
 function shuffleArray(array) {
@@ -35,36 +33,34 @@ function shuffleArray(array) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData();
-  const allDIPostsData = shuffleArray(getSortedDIPostsData());
+  const allPostsData = shuffleArray(getSortedPostsData());
   return {
     props: {
-      allPostsData,
-      allDIPostsData
+      allPostsData
     }
   };
 };
 
-const Home: NextPage<IProps> = ({ allDIPostsData }) => {
+const Home: NextPage<IProps> = ({ allPostsData }) => {
   return (
     <>
       <Container>
         <Head>
-          <title>EXPO CMD Jaar 1 2020-21</title>
+          <title>EXPO CMD Jaar 2 2020-21</title>
           <link href="/favicon.ico" rel="icon" />
         </Head>
 
         <Main>
-          <h2 className="text-green-600 uppercase text-sm font-black">
-            Students
+          <h2 className="text-purple-600 uppercase text-sm font-black">
+            Teams
           </h2>
-          <ul className="container no-underline flex flex-wrap  justify-start text-white">
-            {allDIPostsData.map(({ id, firstname }) => (
+          <ul className="container no-underline flex flex-wrap  justify-start text-white mb-10">
+            {allPostsData.map(({ id, title }) => (
               <li
-                key={id}
-                className="py-2 px-3 text-xl font-medium  hover:text-green-600 transition duration-300 ease-in-out">
-                <Link href={`/student/${id}`}>
-                  <a>{firstname}</a>
+                key={title}
+                className="py-4 px-3 text-5xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
+                <Link href={`/team/${id}`}>
+                  <a>{title}</a>
                 </Link>
                 <br />
               </li>
