@@ -1,23 +1,18 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
 
 const Visuals: FC<{ src: string }> = ({ src }) => {
-  const [isLoaded, setIsLoaded] = useState<boolean>(false);
+  const [, setIsLoaded] = useState<boolean>(false);
 
   const imgRef = useRef(null);
   useEffect(() => {
-    imgRef.current.src = '/di-visuals/' + src + '.jpg';
+    imgRef.current.src = `/teams/${src}`;
 
     imgRef.current.addEventListener('loadeddata', () => {
       setIsLoaded(true);
     });
   }, [src, imgRef]);
 
-  return (
-    <img
-      ref={imgRef}
-      className="w-full"
-    />
-  );
+  return <img ref={imgRef} alt="CMD EXPO Jaar 2" className="w-full" />;
 };
 
 export default Visuals;
