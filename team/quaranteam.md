@@ -10,9 +10,9 @@ members:
     -   name: Juliën Kreuk
 miro: 'o9J_l_w2gV4'
 visual: 'quaranteam.png'
+youtube: 'Ir1_TJNd6F4'
+teams: 'https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchannel%2F19%3A3ec097976a9e43d9893dbb47da364af1%40thread.tacv2%2F2A%2520Quarranteam%3FgroupId%3D9de1bad9-5153-4a55-b11b-d7cad7e67836%26tenantId%3Dca6fbace-7cba-4d53-8681-a06284f7ff46&type=channel&deeplinkId=bdec3a72-d922-4d20-a07a-c86563919556&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true'
+
 ---
 
 
-<div style="padding-top:56.25%;">
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ir1_TJNd6F4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-</div>

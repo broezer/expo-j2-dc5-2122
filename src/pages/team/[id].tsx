@@ -9,6 +9,7 @@ import Container from '@/components/Container';
 import Main from '@/components/Main';
 import Miro from '@/components/Miro';
 import Visual from '@/components/Visual';
+import YouTube from '@/components/YouTube';
 
 import {
   getAllPostIds,
@@ -35,6 +36,7 @@ interface IProps {
     miro: string;
     teams: string;
     visual: string;
+    youtube: string;
   };
 }
 
@@ -107,7 +109,7 @@ const Project: NextPage<IProps> = ({ postData, allPostsData }) => {
             <section className="flex flex-wrap justify-center">
               {postData.members.map(({ name }) => (
                 <>
-                  <div className="w-1/6 flex flex-col flex-wrap text-center ">
+                  <div className="md:w-1/6 w-1/2 flex flex-col flex-wrap text-center ">
                     <h3 className="text-center font-semibold my-2 w-full  text-gray-800">
                       {name}
                     </h3>
@@ -125,10 +127,16 @@ const Project: NextPage<IProps> = ({ postData, allPostsData }) => {
               </h2>
             </section>
 
-            <section className="flex w-3/5 justify-center m-auto my-10">
+            <section className="flex  md:w-3/5 w-full justify-center m-auto my-10">
               <figure className="shadow-lg">
                 <Visual src={postData.visual} />
               </figure>
+            </section>
+
+            <section className="md:w-3/5 w-full justify-center m-auto my-10">
+              <div style={{ display: postData.youtube ? 'block' : 'none' }}>
+                <YouTube src={postData.youtube} />
+              </div>
             </section>
 
             <section
@@ -137,23 +145,19 @@ const Project: NextPage<IProps> = ({ postData, allPostsData }) => {
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
 
-            {/*
-            <section className="flex flex-wrap justify-center my-10 w-4/5 m-auto">
+            <section
+              className="flex flex-wrap justify-center my-10 w-4/5 m-auto"
+              style={{ display: postData.teams ? 'block' : 'none' }}>
               <h2 className="uppercase text-xs text-purple-600 font-bold w-full mb-4 text-center">
                 Connect with us
               </h2>
               <a
-                className="w-1/3 cursor-pointer bg-white text-center mx-5 p-4 text-green-400 rounded-md border-solid border-2 border-green-400 hover:text-white hover:bg-green-400 transition ease-in-out duration-300"
-                href={postData.casestudy}>
-                Bezoek onze case-study
-              </a>
-              <a
-                className="w-1/3 cursor-pointer bg-white text-center mx-5 p-4 text-purple-600 rounded-md border-solid border-2 border-purple-600 hover:text-white hover:bg-purple-600 transition ease-in-out duration-300"
-                href={postData.teams}>
+                className="w-full inline-block cursor-pointer bg-white text-center mx-5 p-4 text-purple-600 rounded-md border-solid border-2 border-purple-600 hover:text-white hover:bg-purple-600 transition ease-in-out duration-300"
+                href={postData.teams}
+                target="_blank">
                 Meet op MS Teams
               </a>
             </section>
-            */}
 
             <h4 className="text-xl text-center w-full font-black uppercase text-green-400 my-6">
               Bekijk het project op ons Miro board

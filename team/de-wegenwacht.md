@@ -11,6 +11,7 @@ members:
     -   name: Volkan Bakar
 miro: 'o9J_lMsxkiU'
 visual: 'wegenwacht.png'
+teams: 'https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchannel%2F19%3A60516f0ca8d244d0b4ecec6ba1b94260%40thread.tacv2%2F2B%2520Wegenwacht%3FgroupId%3D9de1bad9-5153-4a55-b11b-d7cad7e67836%26tenantId%3Dca6fbace-7cba-4d53-8681-a06284f7ff46&type=channel&deeplinkId=501c412d-abb8-4687-8238-f10a9686efe8&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true'
 
 ---
 

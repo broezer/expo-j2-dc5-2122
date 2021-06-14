@@ -10,6 +10,7 @@ members:
     -   name: Nigel Jansens
 miro: 'o9J_lM0jg5w'
 visual: 'beta.gif'
+youtube: 'tWve8bXqHuI'
 
 ---
 
