@@ -9,7 +9,7 @@ members:
     -   name: Naomi Zijderveld
     -   name: Sanne Kurpershoek
 miro: ''
-visual: 'futuresmoves.jpg'
+visual: 'futuremoves.jpg'
 
 ---
 
