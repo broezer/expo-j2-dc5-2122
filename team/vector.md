@@ -9,7 +9,7 @@ members:
     -   name: Enes Sentürk
     -   name: Vera van Veen
     -   name: Zainab Al-Jabara
-miro: 'o9J_lBHGZmo'
+miro: 'o9J_lGofQiI'
 visual: 'vector.jpg'
 
 ---
