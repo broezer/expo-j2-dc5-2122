@@ -17,5 +17,3 @@ visual: 'mahalo.jpg'
 
 
 
-
-

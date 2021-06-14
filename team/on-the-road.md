@@ -9,7 +9,7 @@ members:
     -   name: Anne Bruin
     -   name: Sandesh Boedhoe
 miro: 'o9J_lBHGZmo'
-visual: 'ontheroad.png'
+visual: 'ontheroad.jpg'
 
 ---
 

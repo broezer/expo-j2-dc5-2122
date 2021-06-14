@@ -8,7 +8,7 @@ members:
     -   name: Ranicha Khoenkhoen
     -   name: Mae Akse
     -   name: Kylie van de Sande
-miro: ''
+miro: 'o9J_lAdZfT4'
 visual: 'mirk.jpg'
 
 

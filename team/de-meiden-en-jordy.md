@@ -10,7 +10,7 @@ members:
     -   name: Louise de Haas
 casestudy: 'https://vissnor.github.io/SamenActief/casestudywonderteam.pdf '
 miro: 'o9J_lAGXCAA'
-visual: 'demeidenenjordy.png'
+visual: 'demeidenenjordy.jpg'
 ---
 
 
