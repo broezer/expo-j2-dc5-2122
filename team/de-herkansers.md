@@ -11,6 +11,7 @@ members:
     -   name: Henri van der Stelt
 miro: 'o9J_l_l60Xs'
 visual: 'herkansers.png'
+youtube: '7QzAZKD9rOI'
 
 ---
 

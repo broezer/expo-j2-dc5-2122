@@ -10,6 +10,7 @@ members:
     -   name: Levi Roest
 miro: 'o9J_lM03A-I' 
 visual: 'code-rood.jpg'
+youtube: '4z5IncdMe-4'
 
 ---
 

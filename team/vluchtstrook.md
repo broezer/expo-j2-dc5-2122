@@ -10,6 +10,7 @@ members:
     -   name: Dylan Bol
 miro: 'o9J_l_7oyRY'
 visual: 'vluchtstrook.png'
+youtube: 'q0NGQm4VeDc'
 
 ---
 
