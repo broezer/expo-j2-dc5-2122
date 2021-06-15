@@ -36,6 +36,7 @@ const Twitchi: FC<{ src: string }> = ({ src }) => {
   return (
     <AsideWrapper>
       <div className="twitch absolute inline-block w-11/12 h-5/6">
+        <h2 className="text-center text-white">Livestream is het beste te bekijken via Firefox/Chrome/Safari</h2>
         <div className="twitch-video w-full h-full">
           <iframe
             ref={miroRef}
@@ -46,6 +47,7 @@ const Twitchi: FC<{ src: string }> = ({ src }) => {
             width="100%"
           />
         </div>
+        
       </div>
     </AsideWrapper>
   );
