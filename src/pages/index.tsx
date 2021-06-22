@@ -46,7 +46,7 @@ const Home: NextPage<IProps> = ({ allPostsData }) => {
     <>
       <Container>
         <Head>
-          <title>EXPO CMD Jaar 2 2020-21</title>
+          <title>! EXPO CMD Jaar 2 2020-21 </title>
           <link href="/favicon.ico" rel="icon" />
         </Head>
 
