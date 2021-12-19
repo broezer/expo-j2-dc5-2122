@@ -44,44 +44,44 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const Home: NextPage<IProps> = ({}) => {
   const classAList = [
-    'Dynamic System',
-    'Idera',
-    'WeDesign',
-    'We Bond!',
-    'WeCreate'
+    { title: 'Dynamic System', link: 'dynamic-system' },
+    { title: 'Idera', link: 'idera' },
+    { title: 'WeDesign', link: 'wedesign' },
+    { title: 'We Bond!', link: 'webond' },
+    { title: 'WeCreate', link: 'wecreate' }
   ];
 
   const classBList = [
-    'Team Undecided',
-    'In n Out',
-    'Team RANJAH',
-    'Reach Out',
-    'We Anwser'
+    { title: 'Team Undecided', link: 'team-undecided' },
+    { title: 'In n Out', link: 'in-nout' },
+    { title: 'Team RANJAH', link: 'team-ranjah' },
+    { title: 'Reach Out', link: 'reach-out' },
+    { title: 'We Anwser', link: 'weanwser' }
   ];
 
   // eslint-disable-next-line prettier/prettier
   const classCList = [
-    'CMTA',
-    'Anoniem',
-    'WiiTransfer',
-    'Frietfjieuw',
-    'Tom'
+    { title: 'CMTA', link: 'cmta' },
+    { title: 'Anoniem', link: 'anoniem' },
+    { title: 'WiiTransfer', link: 'wiitransfer' },
+    { title: 'Frietfjieuw', link: 'frietfjieuw' },
+    { title: 'Tom', link: 'tom' }
   ];
 
   const classDList = [
-    'Bijmekaar Geraapt Zootj',
-    'No Boys Please',
-    'Portie',
-    'The Monkey Business',
-    'Women of Wisdom'
+    { title: 'Bijmekaar Geraapt Zootj', link: 'bgz' },
+    { title: 'No Boys Please', link: 'no-boys-please' },
+    { title: 'Portie', link: 'portie' },
+    { title: 'The Monkey Business', link: 'tmb' },
+    { title: 'Women of Wisdom', link: 'wow' }
   ];
 
   const classEList = [
-    'AMG',
-    'Diverse',
-    'Raja Official',
-    'Voor Goud',
-    'WeTransform'
+    { title: 'AMG', link: 'amg' },
+    { title: 'Diverse', link: 'diverse' },
+    { title: 'Raja Official', link: 'raja-official' },
+    { title: 'Voor Goud', link: 'voorgoud' },
+    { title: 'WeTransform', link: 'wetransform' }
   ];
 
   return (
@@ -99,10 +99,12 @@ const Home: NextPage<IProps> = ({}) => {
           <h2 className="text-purple-600 uppercase text-sm font-black">2A</h2>
 
           <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
-            {classAList.map(name => (
-              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
-                <Link href={`/team/${name}`}>
-                  <a>{name}</a>
+            {classAList.map((team, index) => (
+              <li
+                className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out"
+                data-index={index}>
+                <Link href={`/team/${team.link}`}>
+                  <a>{team.title}</a>
                 </Link>
                 <br />
               </li>
@@ -112,10 +114,12 @@ const Home: NextPage<IProps> = ({}) => {
           <h2 className="text-purple-600 uppercase text-sm font-black">2B</h2>
 
           <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
-            {classBList.map(name => (
-              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
-                <Link href={`/team/${name}`}>
-                  <a>{name}</a>
+            {classBList.map((team, index) => (
+              <li
+                className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out"
+                data-index={index}>
+                <Link href={`/team/${team.link}`}>
+                  <a>{team.title}</a>
                 </Link>
                 <br />
               </li>
@@ -125,10 +129,12 @@ const Home: NextPage<IProps> = ({}) => {
           <h2 className="text-purple-600 uppercase text-sm font-black">2C</h2>
 
           <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
-            {classCList.map(name => (
-              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
-                <Link href={`/team/${name}`}>
-                  <a>{name}</a>
+            {classCList.map((team, index) => (
+              <li
+                className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out"
+                data-index={index}>
+                <Link href={`/team/${team.link}`}>
+                  <a>{team.title}</a>
                 </Link>
                 <br />
               </li>
@@ -138,10 +144,12 @@ const Home: NextPage<IProps> = ({}) => {
           <h2 className="text-purple-600 uppercase text-sm font-black">2D</h2>
 
           <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
-            {classDList.map(name => (
-              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
-                <Link href={`/team/${name}`}>
-                  <a>{name}</a>
+            {classDList.map((team, index) => (
+              <li
+                className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out"
+                data-index={index}>
+                <Link href={`/team/${team.link}`}>
+                  <a>{team.title}</a>
                 </Link>
                 <br />
               </li>
@@ -151,10 +159,12 @@ const Home: NextPage<IProps> = ({}) => {
           <h2 className="text-purple-600 uppercase text-sm font-black">2E</h2>
 
           <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
-            {classEList.map(name => (
-              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
-                <Link href={`/team/${name}`}>
-                  <a>{name}</a>
+            {classEList.map((team, index) => (
+              <li
+                className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out"
+                data-index={index}>
+                <Link href={`/team/${team.link}`}>
+                  <a>{team.title}</a>
                 </Link>
                 <br />
               </li>
