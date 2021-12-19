@@ -63,7 +63,7 @@ const Home: NextPage<IProps> = ({}) => {
   const classCList = [
     { title: 'CMTA', link: 'cmta' },
     { title: 'Anoniem', link: 'anoniem' },
-    { title: 'WiiTransfer', link: 'wiitransfer' },
+    { title: 'WiiTransfer', link: 'wii-transfer' },
     { title: 'Frietfjieuw', link: 'frietfjieuw' },
     { title: 'Tom', link: 'tom' }
   ];
