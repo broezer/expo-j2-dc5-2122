@@ -46,17 +46,17 @@ const Home: NextPage<IProps> = ({}) => {
   const classAList = [
     { title: 'Dynamic System', link: 'dynamic-system' },
     { title: 'Idera', link: 'idera' },
-    { title: 'WeDesign', link: 'wedesign' },
-    { title: 'We Bond!', link: 'webond' },
-    { title: 'WeCreate', link: 'wecreate' }
+    { title: 'WeDesign', link: 'we-design' },
+    { title: 'We Bond!', link: 'we-bond' },
+    { title: 'WeCreate', link: 'we-create' }
   ];
 
   const classBList = [
     { title: 'Team Undecided', link: 'team-undecided' },
-    { title: 'In n Out', link: 'in-nout' },
+    { title: 'In n Out', link: 'in-n-out' },
     { title: 'Team RANJAH', link: 'team-ranjah' },
     { title: 'Reach Out', link: 'reach-out' },
-    { title: 'We Anwser', link: 'weanwser' }
+    { title: 'We Anwser', link: 'we-anwser' }
   ];
 
   // eslint-disable-next-line prettier/prettier
@@ -81,7 +81,7 @@ const Home: NextPage<IProps> = ({}) => {
     { title: 'Diverse', link: 'diverse' },
     { title: 'Raja Official', link: 'raja-official' },
     { title: 'Voor Goud', link: 'voorgoud' },
-    { title: 'WeTransform', link: 'wetransform' }
+    { title: 'WeTransform', link: 'we-transform' }
   ];
 
   return (
