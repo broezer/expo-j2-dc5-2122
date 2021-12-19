@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-pattern */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-plusplus */
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -41,26 +42,119 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-const Home: NextPage<IProps> = ({ allPostsData }) => {
+const Home: NextPage<IProps> = ({}) => {
+  const classAList = [
+    'Dynamic System',
+    'Idera',
+    'WeDesign',
+    'We Bond!',
+    'WeCreate'
+  ];
+
+  const classBList = [
+    'Team Undecided',
+    'In n Out',
+    'Team RANJAH',
+    'Reach Out',
+    'We Anwser'
+  ];
+
+  // eslint-disable-next-line prettier/prettier
+  const classCList = [
+    'CMTA',
+    'Anoniem',
+    'WiiTransfer',
+    'Frietfjieuw',
+    'Tom'
+  ];
+
+  const classDList = [
+    'Bijmekaar Geraapt Zootj',
+    'No Boys Please',
+    'Portie',
+    'The Monkey Business',
+    'Women of Wisdom'
+  ];
+
+  const classEList = [
+    'AMG',
+    'Diverse',
+    'Raja Official',
+    'Voor Goud',
+    'WeTransform'
+  ];
+
   return (
     <>
       <Container>
         <Head>
-          <title>! EXPO CMD Jaar 2 2020-21 </title>
+          <title>! CMD DC5 2021-2022 </title>
           <link href="/favicon.ico" rel="icon" />
         </Head>
 
-        <Main>
-          <h2 className="text-purple-600 uppercase text-sm font-black">
-            Teams
-          </h2>
-          <ul className="container no-underline flex flex-wrap  justify-start text-white mb-10">
-            {allPostsData.map(({ id, title }) => (
-              <li
-                key={title}
-                className="py-4 px-3 text-5xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
-                <Link href={`/team/${id}`}>
-                  <a>{title}</a>
+        <Main className="text-left justify-start">
+          <h1 className="text-green-400 uppercase text-4xl py-4 font-black">
+            High Fidelity Protoype Party
+          </h1>
+          <h2 className="text-purple-600 uppercase text-sm font-black">2A</h2>
+
+          <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
+            {classAList.map(name => (
+              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
+                <Link href={`/team/${name}`}>
+                  <a>{name}</a>
+                </Link>
+                <br />
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="text-purple-600 uppercase text-sm font-black">2B</h2>
+
+          <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
+            {classBList.map(name => (
+              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
+                <Link href={`/team/${name}`}>
+                  <a>{name}</a>
+                </Link>
+                <br />
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="text-purple-600 uppercase text-sm font-black">2C</h2>
+
+          <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
+            {classCList.map(name => (
+              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
+                <Link href={`/team/${name}`}>
+                  <a>{name}</a>
+                </Link>
+                <br />
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="text-purple-600 uppercase text-sm font-black">2D</h2>
+
+          <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
+            {classDList.map(name => (
+              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
+                <Link href={`/team/${name}`}>
+                  <a>{name}</a>
+                </Link>
+                <br />
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="text-purple-600 uppercase text-sm font-black">2E</h2>
+
+          <ul className="container no-underline flex flex-wrap  justify-center text-black mb-10">
+            {classEList.map(name => (
+              <li className="py-4 px-3 text-4xl font-medium  hover:text-purple-600 transition duration-300 ease-in-out">
+                <Link href={`/team/${name}`}>
+                  <a>{name}</a>
                 </Link>
                 <br />
               </li>
