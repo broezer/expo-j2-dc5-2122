@@ -84,7 +84,7 @@ const Project: NextPage<IProps> = ({ postData }) => {
 
   const classBList = [
     { title: 'Team Undecided', link: 'team-undecided' },
-    { title: 'In n Out', link: 'in-n-out' },
+    { title: 'In \'\n Out', link: 'in-n-out' },
     { title: 'Team RANJAH', link: 'team-ranjah' },
     { title: 'Reach Out', link: 'reach-out' },
     { title: 'We Anwser', link: 'we-anwser' }
@@ -101,7 +101,8 @@ const Project: NextPage<IProps> = ({ postData }) => {
 
   const classDList = [
     { title: 'Bijmekaar Geraapt Zootj', link: 'bgz' },
-    { title: 'No Boys Please', link: 'no-boys-please' },
+    { title: '4B\'\s', link: '4bs' },
+    { title: 'Diem', link: 'diem' },
     { title: 'Portie', link: 'portie' },
     { title: 'The Monkey Business', link: 'tmb' },
     { title: 'Women of Wisdom', link: 'wow' }

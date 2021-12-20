@@ -53,7 +53,7 @@ const Home: NextPage<IProps> = ({}) => {
 
   const classBList = [
     { title: 'Team Undecided', link: 'team-undecided' },
-    { title: 'In n Out', link: 'in-n-out' },
+    { title: 'In \'\n Out', link: 'in-n-out' },
     { title: 'Team RANJAH', link: 'team-ranjah' },
     { title: 'Reach Out', link: 'reach-out' },
     { title: 'We Anwser', link: 'we-anwser' }
@@ -70,7 +70,8 @@ const Home: NextPage<IProps> = ({}) => {
 
   const classDList = [
     { title: 'Bijmekaar Geraapt Zootj', link: 'bgz' },
-    { title: 'No Boys Please', link: 'no-boys-please' },
+    { title: '4B\'\s', link: '4bs' },
+    { title: 'Diem', link: 'diem' },
     { title: 'Portie', link: 'portie' },
     { title: 'The Monkey Business', link: 'tmb' },
     { title: 'Women of Wisdom', link: 'wow' }
@@ -80,7 +81,6 @@ const Home: NextPage<IProps> = ({}) => {
     { title: 'AMG', link: 'amg' },
     { title: 'Diverse', link: 'diverse' },
     { title: 'Raja Official', link: 'raja-official' },
-    { title: 'Voor Goud', link: 'voorgoud' },
     { title: 'WeTransform', link: 'we-transform' }
   ];
 

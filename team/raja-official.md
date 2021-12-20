@@ -8,6 +8,8 @@ members:
     -   name: Julius Bosboom
     -   name: Alejandro Djodikromo
     -   name: Anish Ramkhelawan
+    -   name: Angel la Riviere
+    -   name: Diego Otalvaro Cardona
 miro: 'uXjVOabIWmA=/?invite_link_id=222099119261'
 visual: ''
 youtube: ''

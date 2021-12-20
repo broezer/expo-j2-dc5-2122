@@ -8,6 +8,7 @@ members:
     -   name: Bruna de Silva Gerage
     -   name: Roy Vissers
     -   name: Rico Boeren
+    -   name: Regina Eloshvili Pereira
 miro: 'uXjVOabIWp8=/?invite_link_id=763315961575'
 visual: ''
 youtube: ''
