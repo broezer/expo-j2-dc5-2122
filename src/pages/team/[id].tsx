@@ -112,7 +112,6 @@ const Project: NextPage<IProps> = ({ postData }) => {
     { title: 'AMG', link: 'amg' },
     { title: 'Diverse', link: 'diverse' },
     { title: 'Raja Official', link: 'raja-official' },
-    { title: 'Voor Goud', link: 'voorgoud' },
     { title: 'WeTransform', link: 'we-transform' }
   ];
 
