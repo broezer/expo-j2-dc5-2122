@@ -87,7 +87,8 @@ const Project: NextPage<IProps> = ({ postData }) => {
     { title: 'In \'\n Out', link: 'in-n-out' },
     { title: 'Team RANJAH', link: 'team-ranjah' },
     { title: 'Reach Out', link: 'reach-out' },
-    { title: 'We Anwser', link: 'we-anwser' }
+    { title: 'We Anwser', link: 'we-anwser' },
+    { title: 'Unexhaustable', link: 'unexhaustable'}
   ];
 
   // eslint-disable-next-line prettier/prettier
