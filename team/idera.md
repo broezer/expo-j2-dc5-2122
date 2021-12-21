@@ -7,7 +7,7 @@ members:
     -   name: Rosalie Hollestein
     -   name: Iris Oldengarm
     -   name: Annemiek in t Veld
-    -   name: Dayhana Herrara Carmona
+    -   name: Dayhana Herrera Carmona
     -   name: Elize Rademaker
 miro: 'uXjVOabywg8=/?invite_link_id=662946669044'
 visual: ''
