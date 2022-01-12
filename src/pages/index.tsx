@@ -95,7 +95,7 @@ const Home: NextPage<IProps> = ({}) => {
 
         <Main className="text-left justify-start">
           <h1 className="text-green-400 uppercase text-4xl py-4 font-black">
-            High Fidelity Protoype Party
+           Proefexpo DC5
           </h1>
           <h2 className="text-purple-600 uppercase text-sm font-black">2A</h2>
 
